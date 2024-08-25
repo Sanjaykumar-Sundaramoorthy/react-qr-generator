@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #d4f3ff;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.app-container h2 {
+    color: #54cfff;
+    font-size: 25px;
+}
+
+.qr-img {
+    max-height: 50%;
+    max-width: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.label-container {
+    margin-top: 20px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #143c4c;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input[type='text'] {
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #ffae00;
+    border-radius: 5px;
+}
+
+button {
+    width: 215px;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #254450;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-button {
+    background-color: #54cfff;
+}
+
+.generate-button:disabled {
+    cursor: not-allowed;
+    background-color: #bdc3c7;
+}
+
+.download-button {
+    background-color: #ffae00;
+    margin-left: 10px;
+}
+
+.download-button:hover {
+    background-color: #bc8100;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #54cfff;
+    margin-top: 20px;
+}
+
+@media (max-width:800px){
+    .label-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .download-button{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
